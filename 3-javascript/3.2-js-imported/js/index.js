@@ -40,14 +40,57 @@ console.log(video.comments[video.comments.length-1])
 
 
 //Tarea:
-var arrMovies=[{movie: 'Titanic', isFree: true}, {movie:'Xmen', isFree: false, price:20}];
-var Movie=prompt('Ingrese nombre de película');
+var arrMovies = [{movie: 'Titanic', isFree: true}, {movie:'Xmen', isFree: false, price:20}, {movie:'Avatar', isFree: false, price:100}, {movie:'The Avengers', isFree: true}];
+var Movie = prompt('Ingrese nombre de película');
 for (let i=0; i<arrMovies.length; i++){
     if (arrMovies[i].movie==Movie){
         if (arrMovies[i].isFree) {
-            alert('Es gratis');
+            alert('Puedes ver la película, es gratis.');
         } else {
-            alert('El precio es '+ arrMovies[i].price);
+            alert('Para ver esta película necesitas pagar por ella. El precio es $'+ arrMovies[i].price + '.');
         }
     }
+}
+
+var monthNumber = Number(prompt('Ingrese número del mes'));
+switch (monthNumber) {
+    case 1:
+        console.log('Enero');
+    break;
+    case 2:
+        console.log('Febrero');
+    break;
+    case 3:
+        console.log('Marzo');
+    break;
+    case 4:
+        console.log('Abril');
+    break;
+    case 5:
+        console.log('Mayo');
+    break;
+    case 6:
+        console.log('Junio');
+    break;
+    case 7:
+        console.log('Julio');
+    break;
+    case 8:
+        console.log('Agosto');
+    break;
+    case 9:
+        console.log('Septiembre');
+    break;
+    case 10:
+        console.log('Octubre');
+    break;
+    case 11:
+        console.log('Noviembre');
+    break;
+    case 12:
+        console.log('Diciembre');
+    break;
+    default:
+        console.log('El mes ingresado no existe');
+    break;
 }

@@ -1,0 +1,27 @@
+.my-border{
+    border-radius: 15px;
+}
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+
+  .mdl-card{
+    background-color: aqua;
+  }
+.mdl-layout__header{
+    background-color: black;
+}
+
+.mdl-cell{
+    background-color: rgb(42, 46, 165);
+    color: white;
+}
