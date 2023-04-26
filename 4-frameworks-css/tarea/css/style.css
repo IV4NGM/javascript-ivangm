@@ -1,0 +1,31 @@
+.demo-layout-transparent {
+    background: url('https://images5.alphacoders.com/500/500333.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+/* This background is dark, so we set text to white. Use 87% black instead if
+    your background is light. */
+color: white;
+}
+
+img.logo{
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+color: #fff;
+background:
+    url('https://www.10wallpaper.com/wallpaper/medium/1310/perfect_landing-Aircraft_HD_Wallpaper_medium.jpg') bottom right 30% no-repeat #46B6AC;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
