@@ -11,8 +11,8 @@ document.getElementById("inputText").addEventListener("change", function(){
 });
 
 // Evento de teclado en un input
-document.getElementById("inputText2").addEventListener("keyup", function(){
-    alert("Presionaste la tecla: "+event.key);
+document.getElementById("inputText2").addEventListener("keyup", function(event){
+    alert("Presionaste la tecla: " + event.key);
 });
 
 // Evento de carga de una imagen
