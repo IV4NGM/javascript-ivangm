@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tarea DOM</title>
+</head>
+<body>
+    <h1>Manipulación de DOM</h1>
+
+    <div class="flexrow">
+        <!-- Colored raised button -->
+        <button id="backgroundChange" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Cambiar el fondo
+        </button>
+        <button id="defaultBackground" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Fondo por defecto
+        </button>
+    </div>
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        
+        <h3>Comentarios</h3>
+
+        <!-- Textfield with Floating Label -->
+        <div id="formulario">
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="comment">
+                <label class="mdl-textfield__label" for="comment">Déjanos tu comentario...</label>
+                </div>
+            </form>
+                <!-- Colored FAB button -->
+            <button id="addComment" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+            <i class="material-icons">arrow_forward</i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flexcolumn">
+        <p id="biggerText" >Texto para agrandar</p>
+        <button id="makeTextBigger" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Agranda el texto anterior
+        </button>
+    </div>
+
+    <div class="flexcolumn">
+        <p id="textImg">Dale click a la siguiente imagen para cambiarla</p>
+        <img src="https://t3.ftcdn.net/jpg/00/98/26/24/360_F_98262429_sUQILdgC0z5i42izLzjTsIG4HEjbosRX.jpg" alt="sky" id="imgChange">
+    </div>
+
+    <h2>Eventos DOM</h2>
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        
+        <h3>Te digo el texto ingresado</h3>
+
+        <!-- Textfield with Floating Label -->
+        <div id="formulario">
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="comment2">
+                <label class="mdl-textfield__label" for="comment2">Escribe un texto...</label>
+                </div>
+            </form>
+                <!-- Colored FAB button -->
+            <button id="alertComment" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+            <i class="material-icons">arrow_forward</i>
+            </button>
+        </div>
+    </div>
+    <script src="./js/1-manipulacion-DOM.js"></script>
+    <script src="./js/2-eventos-DOM.js"></script>
+</body>
+</html>
