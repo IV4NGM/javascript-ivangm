@@ -4,16 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Juego de adivinanza</title>
 </head>
 <body>
-    <h1>Juego de adivinanza</h1>
-    <p>Intenta adivinar el número entre 1 y 100.</p>
-    <input type="number" id="guess" placeholder="Ingresa tu respuesta">
-    <button id="submit">Adivina</button>
-    <p id="feedback"></p>
-    <button id="playAgain">Reiniciar juego</button>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Juegos</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Adivina el número</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Juegos</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Adivina el número</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <h1>Adivina el número</h1>
+        <h4>Intenta adivinar el número entre 1 y 100</h4>
+        <!-- Numeric Textfield -->
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <form action="#">
+                <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="guess" >
+                <label class="mdl-textfield__label" for="guess">Ingresa tu respuesta...</label>
+                <span class="mdl-textfield__error">Debes ingresar un número</span>
+                </div>
+            </form>
+            <!-- <input type="number" id="guess" placeholder="Ingresa tu respuesta"> -->
+            <!-- Colored raised button -->
+            <button id="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored greenbutton">
+                Adivina
+            </button>
+            <p id="feedback"></p>
+        </div>
+        <!-- <button id="submit">Adivina</button> -->
+        
+        <button id="playAgain" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored greenbutton">
+            Reiniciar juego
+        </button>
+      </main>
+    </div>
+
     <script src="./js/index.js"></script>
 </body>
 </html>

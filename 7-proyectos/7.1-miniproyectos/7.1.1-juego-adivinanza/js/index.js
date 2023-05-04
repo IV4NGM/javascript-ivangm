@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // Definir la función que compara la respuesta del usuario con el número ingresado
     function checkGuess(){
         let userGuess = Number(guessInput.value);
-        if (userGuess===numberToGuess){
+        if (userGuess === numberToGuess){
             feedbackText.textContent = "Muy bien, ¡Ganaste!";
             submitButton.disabled = true;
             playAgainButton.style.display = "block";
@@ -40,5 +40,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Agregar un evento al hacer click en el botón Reiniciar
     playAgainButton.addEventListener("click", restart);
+
+    restart();
 });
 
