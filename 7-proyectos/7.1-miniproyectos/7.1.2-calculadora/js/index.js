@@ -75,3 +75,41 @@ document.getElementById(".").addEventListener("click", function(){
 });
 
 console.log(Number(screenNumber.textContent));
+
+document.addEventListener("keyup", function(event){
+    if(event.key === "0"){
+        document.getElementById("0").click();
+    }else if(event.key === "1"){
+        document.getElementById("1").click();
+    }else if(event.key === "2"){
+        document.getElementById("2").click();
+    }else if(event.key === "3"){
+        document.getElementById("3").click();
+    }else if(event.key === "4"){
+        document.getElementById("4").click();
+    }else if(event.key === "5"){
+        document.getElementById("5").click();
+    }else if(event.key === "6"){
+        document.getElementById("6").click();
+    }else if(event.key === "7"){
+        document.getElementById("7").click();
+    }else if(event.key === "8"){
+        document.getElementById("8").click();
+    }else if(event.key === "9"){
+        document.getElementById("9").click();
+    }else if(event.key === "."){
+        document.getElementById(".").click();
+    }else if(event.key === "+"){
+        document.getElementById("+").click();
+    }else if(event.key === "-"){
+        document.getElementById("-").click();
+    }else if(event.key === "*"){
+        document.getElementById("*").click();
+    }else if(event.key === "/"){
+        document.getElementById("/").click();
+    }else if(event.key === "Enter"){
+        document.getElementById("=").click();
+    }else if(event.key === "Backspace"){
+        document.getElementById("back").click();
+    }
+})
