@@ -1,0 +1,3 @@
+Realizar una página web que sea una agenda de contactos.
+De los contactos debe mostrarse una foto, su nombre y su teléfono.
+Debe haber un filtro de texto para facilitar la búsqueda de los contactos por nombre.
