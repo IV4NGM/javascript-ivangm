@@ -40,6 +40,7 @@ function getDataFromJson() {
     .then(response => response.json())
     .then(data => normalizeData(data))
     .then(cleanData => renderContacts(cleanData))
+    console.log("Data from JSON")
 }
 
 function normalizeData(data) {
@@ -55,7 +56,27 @@ function normalizeData(data) {
 
 function catchEvent(event){
     const inputText = event?.target?.value.toLocaleLowerCase() || '';
-    console.log(inputText)
+    let contactsSearch = [];
+    function normalizeDataInput(data) {
+        for(let i = 0; i < data.length; i++){
+            if(data[i].name.toLocaleLowerCase().includes(inputText)){
+                const newContact = {
+                    name : data[i].name,
+                    photo : data[i].image
+                }
+                contactsSearch.push(newContact);
+            }
+        }
+        return contactsSearch
+    }
+    // Elimina todos los hijos de ulElement para luego crear solo los necesarios
+    while (ulElement.firstChild) {
+        ulElement.removeChild(ulElement.firstChild);
+    }
+    fetch('../api/characters.json')
+    .then(response => response.json())
+    .then(data => normalizeDataInput(data))
+    .then(cleanData => renderContacts(cleanData))
 }
 
 searchingInput.addEventListener('keyup', catchEvent);
